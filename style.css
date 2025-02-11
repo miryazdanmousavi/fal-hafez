@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  text-align: center;
+  font-family: "Vazir" !important;
+  direction: rtl;
+}
+
+#box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 65vh;
+  width: 50vw;
+  margin-top: 120px;
+  text-align: center;
+  border: 2px dashed #181d28;
+  padding: 20px;
+}
+
+#box > h1,
+p,
+button {
+  margin: 30px 0;
+  text-align: center;
+}
+
+#box > p {
+  margin: 0 50px;
+  line-height: 30px;
+}
+
+button {
+  padding: 5px 20px;
+  cursor: pointer;
+  border: 2px solid #181d28;
+  background-color: transparent;
+  color: #181d28;
+  font-size: 20px;
+  font-family: "Vazir" !important;
+}
+
+button:hover {
+  background-color: #181d28;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.hidden {
+  display: none;
+}
+
+#tip {
+  color: #1c39bb;
+}
+
+@media screen and (max-width: 1350px) {
+  #box {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #box {
+    width: 80vw;
+    height: 80vh;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #box {
+    width: 90vw;
+    height: 90vh;
+    margin-top: 30px;
+  }
+
+  #box > p {
+    margin: 0 10px;
+    font-size: 15px;
+  }
+
+  button {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #box {
+    width: 95vw;
+    height: 95vh;
+    margin-top: 15px;
+  }
+}
